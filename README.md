@@ -9,7 +9,7 @@ The instruments on the balance sheet are split into various subaccounts, and the
 Most of the subaccounts are simple, and simply project cash flows for the instruments that are not rate dependent. Therefore, most are simple discounted cash flow models. The only subaccount that was dynamic (i.e. the cash flows depended on the interest rates) were the cashable GICs.
 
 The cashable GIC is essentially a GIC that is redeemable, and this redemption is modeled with a rate dependent function. We define the current coupon as the coupon
-that would be offered on a brand new Cashable GIC as Cc, and customer coupon of the (aged) GIC to be C. In the model, the current coupon is modelled using the 1 month
+that would be offered on a brand new Cashable GIC as Cc, and customer coupon of the (aged) GIC to be C. In the model, the current coupon (see https://finpricing.com/lib/FiBondCoupon.html) is modelled using the 1 month
 spot rate.
 
 The current refinancing incentive is the difference between
@@ -34,13 +34,6 @@ i is given by Pi = Pi−1 −Wi.
 Using the same notation as before, the cashflows should be Ci = Ii + Wi for all months other than maturity. At maturity, there is a
 additional interest payment on the remaining principal, as well as the principal itself:
 
-References:
-
-https://finpricing.com/lib/EqVariance.html
-
-https://zenodo.org/record/6548879/files/balanceSheetModel.pdf
-
-https://zenodo.org/record/6548879#.YpDvbagpDq4
 
 
 
